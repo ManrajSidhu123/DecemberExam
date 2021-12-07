@@ -42,10 +42,10 @@ public class ClientTemplate {
         BufferedReader fin = new BufferedReader(new FileReader("EmployeeDecemberExamData.txt"));
         //PrintWriter fout = new PrintWriter(new BufferedWriter(new FileWriter("outfle.txt")));
         
-        Employee employee1 = new Employee(35, 12.50);
-        Employee employee2 = new Employee(40, 17.25);
-        Employee employee3 = new Employee(45, 12.50);
-        Employee employee4 = new Employee();
+        Employee employee1 = new Employee(35, 12.50);               // employee1 data
+        Employee employee2 = new Employee(40, 17.25);               // employee2 data
+        Employee employee3 = new Employee(45, 12.50);               // employee3 data
+        Employee employee4 = new Employee();                   // employee4 unknown
     
     // ***** print banners *****
     
@@ -73,7 +73,7 @@ public class ClientTemplate {
       employee4.setwage(25.00);
       System.out.format("%5f%5f%2s%1.2f", employee4.getid(), employee4.gethours(), "$",employee4.getwage());
       
-      System.out.println(employee1);
+      System.out.println(employee1);            // printing out employee1 data using toString
     
     // ***** Print Formatted Output *****
     

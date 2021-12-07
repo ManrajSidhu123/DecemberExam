@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /********************************************************************
- * Programmer:	MAnraj
+ * Programmer:	Manraj
  * Class:  CS30S
  *
  * Assignment: AxQy
@@ -28,12 +28,12 @@ public class Employee {
       
       hours = 0;
       wage = 0.0;
-    }
+    }// end constructor
 
     public Employee (int hours, double wage) {
       hours = this.hours;
       wage = this.wage;
-    }
+    }// end constructor
     
     /*****************************************
     * Description: brief description of the methods purpose
@@ -51,25 +51,25 @@ public class Employee {
     
     public int gethours() {
       return hours;
-    }
+    }// end gethours
 
     public double getwage() {
       return wage;
-    }
+    }// end getwage
     
     public int getid() {
       return id;
-    }
+    }// end getid
     
     //*** Setters ***
     
     public void sethours(int name) {
       this.hours = hours;
-    }
+    }// end sethours
 
     public void setwage(double wage) {
       this.wage = wage;
-    }
+    }// end setwage
     
     // toString()
     
