@@ -1,4 +1,7 @@
 #BlueJ package file
+dependency1.from=ClientTemplate
+dependency1.to=Employee
+dependency1.type=UsesDependency
 editor.fx.0.height=872
 editor.fx.0.width=1440
 editor.fx.0.x=0
@@ -13,7 +16,7 @@ package.editor.x=0
 package.editor.y=28
 package.frame.height=872
 package.frame.width=1440
-package.numDependencies=0
+package.numDependencies=1
 package.numTargets=2
 package.showExtends=true
 package.showUses=true

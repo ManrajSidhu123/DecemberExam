@@ -25,11 +25,14 @@ public class Employee {
     
     public Employee(){
       id = nextID++;                // sets unique id for employee
+      
+      hours = 0;
+      wage = 0.0;
     }
 
     public Employee (int hours, double wage) {
-      this.hours = hours;
-      this.wage = wage;
+      hours = this.hours;
+      wage = this.wage;
     }
     
     /*****************************************
