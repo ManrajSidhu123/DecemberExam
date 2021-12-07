@@ -39,7 +39,7 @@ public class ClientTemplate {
         
         // file io buffers for reading and writing to text files
         
-        //BufferedReader fin = new BufferedReader(new FileReader("filename.txt"));
+        BufferedReader fin = new BufferedReader(new FileReader("EmployeeDecemberExamData.txt"));
         //PrintWriter fout = new PrintWriter(new BufferedWriter(new FileWriter("outfle.txt")));
     
     // ***** print banners *****
