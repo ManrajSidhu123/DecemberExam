@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /********************************************************************
- * Programmer:	Manraj
+ * Programmer:    Manraj
  * Class:  CS30S
  *
  * Assignment: AxQy
@@ -24,15 +24,18 @@ public class Employee {
     //*** Constructors ***
     
     public Employee(){
-      id = nextID++;                // sets unique id for employee
       
       hours = 0;
       wage = 0.0;
+      id = nextID++;                // sets unique id for employee
     }// end constructor
 
     public Employee (int hours, double wage) {
-      hours = this.hours;
-      wage = this.wage;
+      
+      this.hours = hours;
+      this.wage = wage;
+      id = nextID++;                // sets unique id for employee
+
     }// end constructor
     
     /*****************************************
@@ -45,7 +48,6 @@ public class Employee {
     * 
     * @return       any return value will be noted here
     * ****************************************/
-    
     
     //*** Getters ***
     
@@ -77,9 +79,9 @@ public class Employee {
       StringBuilder s = new StringBuilder();
       String n1 = System.lineSeparator();
 
-      s.append(String.format("%4f%3f%2s%1.2%s", this.getid(), this.gethours(), "$", this.getwage(), n1)); 
+      s.append(String.format("%4d%3d%2s%1.2f%s", this.getid(), this.gethours(), "$", this.getwage(), n1)); 
 
       return s.toString();
     }// end toString()
     
-} // end of public class
+} // end of public class 
