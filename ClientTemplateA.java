@@ -13,7 +13,7 @@ import java.text.NumberFormat;
  * 
  *************************************************************/
 
-public class ClientTemplate {
+public class ClientTemplateA {
 
     public static void main(String[] args) throws IOException{
     // ***** constants *******
@@ -42,10 +42,10 @@ public class ClientTemplate {
         BufferedReader fin = new BufferedReader(new FileReader("EmployeeDecemberExamData.txt"));
         //PrintWriter fout = new PrintWriter(new BufferedWriter(new FileWriter("outfle.txt")));
         
-        Employee employee1 = new Employee(35, 12.50);               // employee1 data
-        Employee employee2 = new Employee(40, 17.25);               // employee2 data
-        Employee employee3 = new Employee(45, 12.50);               // employee3 data
-        Employee employee4 = new Employee();                        // employee4 unknown
+        EmployeeA employee1 = new EmployeeA(35, 12.50);               // employee1 data
+        EmployeeA employee2 = new EmployeeA(40, 17.25);               // employee2 data
+        EmployeeA employee3 = new EmployeeA(45, 12.50);               // employee3 data
+        EmployeeA employee4 = new EmployeeA();                        // employee4 unknown
     
     // ***** print banners *****
     
@@ -67,13 +67,14 @@ public class ClientTemplate {
     // ***** Main Processing *****
     
       employee4.gethours();
-      employee4.getwage();     
+      employee4.getwage();    
       employee4.setwage(25.00);
       employee4.sethours(40);
       employee4.getid();
       System.out.format("%4d%3d%2s%1.2f%s", employee4.getid(), employee4.gethours(), "$",employee4.getwage(), nl);
       
       System.out.println(employee1);            // printing out employee1 data using toString
+
     
     // ***** Print Formatted Output *****
     

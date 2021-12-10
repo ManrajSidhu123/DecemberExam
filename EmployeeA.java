@@ -3,14 +3,14 @@ import java.util.Scanner;
  * Programmer:    Manraj
  * Class:  CS30S
  *
- * Assignment: AxQy
+ * Assignment: DecemberExam 
  *
  * Description: brief description of class
  ***********************************************************************/
 
 // import libraries as needed here
 
-public class Employee {
+public class EmployeeA {
     //*** Class Variables ***
     
     private static int nextID = 1000;       // unique id for employee
@@ -23,14 +23,14 @@ public class Employee {
     
     //*** Constructors ***
     
-    public Employee(){
+    public EmployeeA(){
       
       hours = 0;
       wage = 0.0;
       id = nextID++;                // sets unique id for employee
     }// end constructor
 
-    public Employee (int hours, double wage) {
+    public EmployeeA (int hours, double wage) {
       
       this.hours = hours;
       this.wage = wage;
