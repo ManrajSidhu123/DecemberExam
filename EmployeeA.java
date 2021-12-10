@@ -3,9 +3,9 @@ import java.util.Scanner;
  * Programmer:    Manraj
  * Class:  CS30S
  *
- * Assignment: DecemberExam 
+ * Assignment: Employee 
  *
- * Description: brief description of class
+ * Description: creating getters and setters for employee data
  ***********************************************************************/
 
 // import libraries as needed here
@@ -65,7 +65,7 @@ public class EmployeeA {
     
     //*** Setters ***
     
-    public void sethours(int name) {
+    public void sethours(int hours) {
       this.hours = hours;
     }// end sethours
 

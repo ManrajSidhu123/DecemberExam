@@ -1,10 +1,10 @@
 /********************************************************************
-  * Programmer:    sveinson
+  * Programmer:    Manraj
   * Class:  CS30S
   *
-  * Assignment: AxQy
+  * Assignment: Exam
   *
-  * Description: brief description of class
+  * Description: prints banner and closing message of exam
   ***********************************************************************/
 
  // import libraries as needed here
@@ -42,7 +42,7 @@
         banner = "*****************************" + nl;
         banner += "Name:        Manraj Sidhu" + nl;
         banner += "Class:       CS30S" + nl;
-        banner += "Assignment:  "+ ExamPayroll + nl;
+        banner += "Assignment:  ExamPayroll" + nl;
         banner += "*****************************" + nl + nl;
         
        return banner;

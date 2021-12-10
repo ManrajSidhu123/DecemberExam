@@ -7,13 +7,14 @@ import java.text.NumberFormat;
  *  Name:           Manraj
  *  Class:          CS30S
  * 
- *  Assignment:     Employee Payroll
+ *  Assignment:     Employee Driver
  * 
- *  Description:    calculate employee payroll
+ *  Description:    printing id number, hours worked, and hourly wage.
+ *                  Using toString() and using getters and setters
  * 
  *************************************************************/
 
-public class ClientTemplateA {
+public class EmployeeDriverA {
 
     public static void main(String[] args) throws IOException{
     // ***** constants *******
@@ -49,8 +50,8 @@ public class ClientTemplateA {
     
     // ***** print banners *****
     
-        ProgramInfo PF = new ProgramInfo("ClientTemplate");
-        System.out.println(PF.getBanner());
+        ProgramInfo PF = new ProgramInfo("Exam");           
+        System.out.println(PF.getBanner());                 //printing banner using ProgramInfo
 
         System.out.println(banner);
         //fout.print(banner);
@@ -63,13 +64,17 @@ public class ClientTemplateA {
     
     // ***** Main Processing *****
     
-      employee4.gethours();
-      employee4.getwage();    
-      employee4.setwage(25.00);
-      employee4.sethours(40);
+    // pinting using getters and setters
+      employee4.gethours();             
+      employee4.getwage();  
       employee4.getid();
+      
+      employee4.setwage(25.00);         
+      employee4.sethours(40);
+      
       System.out.format("%4d%3d%2s%1.2f%s", employee4.getid(), employee4.gethours(), "$",employee4.getwage(), nl);
       
+      // printing using toString()
       System.out.println(employee1);            // printing out employee1 data using toString
 
     
@@ -78,7 +83,7 @@ public class ClientTemplateA {
     // ***** Closing Message *****
     
         System.out.println();
-        System.out.println(PF.getClosingMessage());
+        System.out.println(PF.getClosingMessage());             // printing closing message using ProgramInfo
         //fout.println("End of Processing");
         
     // **** close io buffers *****
