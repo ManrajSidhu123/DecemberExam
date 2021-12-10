@@ -49,12 +49,9 @@ public class ClientTemplateA {
     
     // ***** print banners *****
     
-        banner = "*****************************" + nl;
-        banner += "Name:        Sveinson" + nl;
-        banner += "Class:       CS30S" + nl;
-        banner += "Assignment:  Ax Qy" + nl;
-        banner += "*****************************" + nl + nl;
-        
+        ProgramInfo PF = new ProgramInfo("ClientTemplate");
+        System.out.println(PF.getBanner());
+
         System.out.println(banner);
         //fout.print(banner);
     
@@ -81,7 +78,7 @@ public class ClientTemplateA {
     // ***** Closing Message *****
     
         System.out.println();
-        System.out.println("end of processing");
+        System.out.println(PF.getClosingMessage());
         //fout.println("End of Processing");
         
     // **** close io buffers *****

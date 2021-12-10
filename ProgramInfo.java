@@ -11,12 +11,16 @@
 
  public class ProgramInfo {
      //*** Class Variables ***
-     
-     
 
      //*** Instance Variables ***
+     
+     private String ExamPayroll;
 
      //*** Constructors *** 
+     
+     public ProgramInfo(String assingment){
+         ExamPayroll = this.ExamPayroll;
+     }
 
      /*****************************************
      * Description: brief description of the methods purpose
@@ -30,6 +34,27 @@
      * ****************************************/
 
      //*** Getters ***
+     
+ public String getBanner(){
+        String nl = System.lineSeparator();
+        String banner;
+        
+        banner = "*****************************" + nl;
+        banner += "Name:        Manraj Sidhu" + nl;
+        banner += "Class:       CS30S" + nl;
+        banner += "Assignment:  "+ ExamPayroll + nl;
+        banner += "*****************************" + nl + nl;
+        
+       return banner;
+    }// end getBanner()
+    
+    public String getClosingMessage(){
+       String ClosingMessage;
+       String nl = System.lineSeparator();
+       
+       ClosingMessage = "end of processing";
+       return ClosingMessage;
+    }// end getClosingMessage()
 
      //*** Setters ***
 
